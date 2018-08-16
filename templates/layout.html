@@ -5,6 +5,12 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     </head>
     <body>
+        <!-- Links to the various html pages -->
+        <!-- Create a navbar as you please -->
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('about') }}">About</a>
+        <a href="{{ url_for('application') }}">Application</a>
+        <a href="{{ url_for('gallery') }}">Gallery</a>
         <div class="container">
             {% block body %}
             {% endblock %}
